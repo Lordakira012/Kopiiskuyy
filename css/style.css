@@ -71,10 +71,10 @@ https://fonts.gstatic.com/s/irishgrover/v23/buExpoi6YtLz2QW7LA4flVgv__RP.woff2
 maka bisa coba copy kode berikut untuk menginstall font tadi:
 
 @font-face {
-   font-family: 'Irish Grover';
-   font-style: normal;
-   font-weight: 400;
-   src: url(https://fonts.gstatic.com/s/irishgrover/v23/buExpoi6YtLz2QW7LA4flVgv__RP.woff2) format('woff2');
+  font-family: 'Irish Grover';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/irishgrover/v23/buExpoi6YtLz2QW7LA4flVgv__RP.woff2) format('woff2');
 }
 
 Jika kode di atas sudah di copy
@@ -135,7 +135,7 @@ nav {
    untuk pengguna vscode silahkan arahkan mouse ke kotak warna di bawah
    untuk mengganti warna sesuai keinginan
    */
-   background-color: #198754;
+   background-color: #ca0202;
 
    /* box-shadow membuat efek bayangan */
    box-shadow: 0 3px 7px -2px #000;
@@ -186,7 +186,7 @@ a.shop {
 
 a.chat {
    margin-right: 30px;
-   background-color: rgb(8, 69, 8);
+   background-color: rgb(41, 127, 197);
    color: #fff;
    padding-top: 5px;
    padding-right: 15px;
@@ -210,9 +210,9 @@ a.chat {
 header,
 section {
    /*
-   padding mengatur jarak ke dalam
-   pada padding dan margin ditambahkan top / right / bottom / top 
-   untuk mengatur jarak masing-masing 
+    padding mengatur jarak ke dalam
+    pada padding dan margin ditambahkan top / right / bottom / top 
+    untuk mengatur jarak masing-masing 
    */
    padding-top: 80px;
    padding-bottom: 80px;
@@ -491,6 +491,19 @@ div.testimoni>p {
    text-align: left;
 }
 
+*[data-from="tmp"]>* {
+   position: relative;
+}
+
+*[data-from="tmp"]>*:nth-child(1):before {
+   position: absolute;
+   color: red;
+   bottom: 40px;
+   content: "prakerja";
+   font-size: 13px;
+   z-index: 10;
+   text-decoration: line-through;
+}
 
 /* CONTACT US */
 section.contact-us {
@@ -506,7 +519,7 @@ section.contact-us iframe {
 div.kontak {
    width: 30%;
    /* color mengatur warna tulisan */
-   color: green;
+   color: rgb(0, 2, 0);
    text-align: center;
    margin-top: 50px;
 }
@@ -515,7 +528,7 @@ div.kontak {
 /* FOOTER */
 
 footer {
-   background-color: #198754;
+   background-color: #ca0202;
    padding-top: 15px;
    padding-bottom: 15px;
    color: #fff;
@@ -531,6 +544,8 @@ footer div.navigasi {
 footer div.navigasi a {
    padding: 8px;
 }
+
+
 
 /* UNTUK kode RESPONSIF hari ke 3 tulis DI BAWAH sini */
 
